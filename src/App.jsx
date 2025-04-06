@@ -1,5 +1,4 @@
-import { lazy } from 'solid-js';
-import { Suspense } from 'solid-js';
+import { Suspense, lazy } from 'solid-js';
 import MainLayout from './layouts/MainLayout';
 
 // Lazy load the Home page for better performance

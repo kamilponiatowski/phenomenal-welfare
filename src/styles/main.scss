@@ -2,8 +2,9 @@
 @import 'vendors/normalize';
 
 // Abstracts
-// Note: variables and mixins are auto-imported via Vite config
+@import 'abstracts/variables';
 @import 'abstracts/functions';
+@import 'abstracts/mixins';
 
 // Base
 @import 'base/reset';
