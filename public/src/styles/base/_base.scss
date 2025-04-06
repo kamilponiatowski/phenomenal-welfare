@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: $color-background;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: $spacing-lg;
+    
+    @include respond-to(medium) {
+      padding: $spacing-xl;
+    }
+  }
+  
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: $spacing-xxxl;
+    color: lighten($color-text, 20%);
+    font-style: italic;
+  }
+  
+  .home-page {
+    opacity: 0;
+    transform: translateY(10px);
+    @include transition(all, 0.5s, ease-out);
+    
+    &.loaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Dodane style dla layoutu */
+  .layout {
+    flex: 1;
+    opacity: 0;
+    @include transition(opacity, 0.5s, ease-out);
+    
+    &--loaded {
+      opacity: 1;
+    }
+    
+    &__content {
+      width: 100%;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    body {
+      background: white;
+      color: black;
+      padding: 1cm;
+    }
+    
+    .layout {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }

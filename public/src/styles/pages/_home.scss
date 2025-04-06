@@ -1,0 +1,30 @@
+.home-page {
+    h1 {
+      margin-top: $spacing-lg;
+      margin-bottom: $spacing-xxxl;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -$spacing-md;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: $color-border;
+      }
+    }
+    
+    @include respond-to(medium) {
+      .content-grid {
+        @include grid(2, $spacing-xl);
+      }
+    }
+    
+    @include respond-to(large) {
+      .content-grid {
+        @include grid(3, $spacing-xl);
+      }
+    }
+  }

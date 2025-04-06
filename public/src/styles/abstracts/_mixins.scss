@@ -1,0 +1,47 @@
+// Responsive breakpoints
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == small {
+      @media (min-width: $breakpoint-sm) { @content; }
+    }
+    @else if $breakpoint == medium {
+      @media (min-width: $breakpoint-md) { @content; }
+    }
+    @else if $breakpoint == large {
+      @media (min-width: $breakpoint-lg) { @content; }
+    }
+    @else if $breakpoint == xlarge {
+      @media (min-width: $breakpoint-xl) { @content; }
+    }
+  }
+  
+  // Box shadow
+  @mixin box-shadow($level: 1) {
+    @if $level == 1 {
+      box-shadow: 0 2px 5px $color-shadow;
+    }
+    @else if $level == 2 {
+      box-shadow: 0 4px 8px $color-shadow-hover;
+    }
+    @else if $level == 3 {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  // Transitions
+  @mixin transition($property: all, $duration: $transition-speed, $timing: $transition-timing) {
+    transition: $property $duration $timing;
+  }
+  
+  // Flex center
+  @mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // Grid
+  @mixin grid($columns: 1, $gap: $spacing-md) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+  }

@@ -1,0 +1,49 @@
+.card {
+    margin-bottom: 2.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      border-left: 6px solid #ccc;
+      padding-left: 1rem;
+      
+      &::before {
+        content: attr(data-emoji);
+        margin-right: 0.6rem;
+      }
+    }
+    
+    .cardContent {
+      p {
+        margin-bottom: 0.8rem;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      strong {
+        color: #444;
+        font-weight: 600;
+      }
+    }
+  }
+  
+  @media print {
+    .card {
+      box-shadow: none;
+      background: white;
+      page-break-inside: avoid;
+    }
+  }

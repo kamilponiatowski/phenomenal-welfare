@@ -1,0 +1,29 @@
+// Convert px to rem
+@function rem($pixels, $context: 16) {
+    @return ($pixels / $context) * 1rem;
+  }
+  
+  // Calculate percentage
+  @function percentage($target, $container) {
+    @return ($target / $container) * 100%;
+  }
+  
+  // Create a tint of a color
+  @function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+  }
+  
+  // Create a shade of a color
+  @function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+  }
+  
+  // Z-index function
+  @function z($layer) {
+    @if map-has-key($z-layers, $layer) {
+      @return map-get($z-layers, $layer);
+    }
+    
+    @warn "No z-index found for `#{$layer}` in $z-layers map.";
+    @return 0;
+  }

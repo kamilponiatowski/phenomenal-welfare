@@ -1,0 +1,45 @@
+// Colors
+$color-background: #fdfcf9;
+$color-text: #333;
+$color-text-strong: #444;
+$color-white: #fff;
+$color-light-gray: #f0f0ee;
+$color-border: #ccc;
+$color-shadow: rgba(0, 0, 0, 0.05);
+$color-shadow-hover: rgba(0, 0, 0, 0.08);
+
+// Typography
+$font-family-primary: 'Georgia', serif;
+$font-size-base: 1rem;
+$font-size-large: 1.8rem;
+$font-size-heading: 2.5rem;
+$line-height: 1.7;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 0.8rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 2.5rem;
+$spacing-xxxl: 3rem;
+
+// Layout
+$max-width: 900px;
+$border-radius: 10px;
+$border-width: 6px;
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Transitions
+$transition-speed: 0.2s;
+$transition-timing: ease;
+
+// Z-index layers
+$z-index-base: 1;
+$z-index-header: 10;
+$z-index-modal: 100;

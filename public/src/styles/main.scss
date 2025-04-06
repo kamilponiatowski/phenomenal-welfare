@@ -1,0 +1,23 @@
+// Vendors
+@import 'vendors/normalize';
+
+// Abstracts
+// Note: variables and mixins are auto-imported via Vite config
+@import 'abstracts/functions';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+// Components
+@import 'components/sections';
+
+// Layout
+@import 'layouts/main';
+
+// Pages
+@import 'pages/home';
+
+// Themes
+@import 'themes/default';

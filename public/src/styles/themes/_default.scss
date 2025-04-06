@@ -1,0 +1,18 @@
+// Default theme variables and overrides
+// This file can be extended to support multiple themes
+
+:root {
+    // We can use CSS variables for theming if needed
+    --color-primary: #3a7bd5;
+    --color-secondary: #4d90fe;
+    --color-success: #5cb85c;
+    --color-info: #3a7bd5;
+    --color-warning: #f0ad4e;
+    --color-danger: #d9534f;
+  }
+  
+  // Theme-specific overrides could be added here
+  // .theme-dark {
+  //   --color-background: #121212;
+  //   --color-text: #ffffff;
+  // }

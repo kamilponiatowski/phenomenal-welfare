@@ -1,0 +1,49 @@
+body {
+    font-family: $font-family-primary;
+    font-size: $font-size-base;
+    line-height: $line-height;
+    color: $color-text;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-md;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    font-size: $font-size-heading;
+    text-align: center;
+    margin-bottom: $spacing-xxxl;
+  }
+  
+  h2 {
+    font-size: $font-size-large;
+  }
+  
+  p {
+    margin-bottom: $spacing-md;
+  }
+  
+  strong {
+    color: $color-text-strong;
+    font-weight: 600;
+  }
+  
+  a {
+    color: darken($color-text, 15%);
+    text-decoration: underline;
+    
+    &:hover {
+      color: darken($color-text, 25%);
+    }
+  }
+  
+  ul, ol {
+    padding-left: $spacing-lg;
+    margin-bottom: $spacing-lg;
+  }
+  
+  li {
+    margin-bottom: $spacing-xs;
+  }
